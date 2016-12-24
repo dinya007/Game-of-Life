@@ -1,4 +1,4 @@
-package ru.tisov.denis.life;
+package ru.tisov.denis.life.domain;
 
 
 import org.junit.Assert;
@@ -39,9 +39,6 @@ public class LifeTest {
                 {false, false, true, false, false}
         }));
     }
-
-
-
 
 
 }

@@ -1,6 +1,6 @@
 package ru.tisov.denis.life.message;
 
-import ru.tisov.denis.life.Life;
+import ru.tisov.denis.life.domain.Life;
 
 import java.io.Serializable;
 

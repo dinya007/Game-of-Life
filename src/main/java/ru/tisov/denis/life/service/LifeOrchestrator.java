@@ -1,4 +1,4 @@
-package ru.tisov.denis.life;
+package ru.tisov.denis.life.service;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -7,6 +7,7 @@ import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
 import akka.util.Timeout;
 import ru.tisov.denis.life.actor.NewGenerationActor;
+import ru.tisov.denis.life.domain.Life;
 import ru.tisov.denis.life.message.NewLifeRq;
 import ru.tisov.denis.life.message.NewLifeRs;
 import scala.compat.java8.FutureConverters;

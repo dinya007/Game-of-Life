@@ -1,7 +1,8 @@
-package ru.tisov.denis.life;
+package ru.tisov.denis.life.service;
 
 import junit.framework.Assert;
 import org.junit.Test;
+import ru.tisov.denis.life.domain.Life;
 
 public class LifeOrchestratorTest {
 

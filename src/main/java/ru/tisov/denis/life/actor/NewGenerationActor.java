@@ -3,7 +3,7 @@ package ru.tisov.denis.life.actor;
 import akka.actor.AbstractActor;
 import akka.actor.Status;
 import akka.japi.pf.ReceiveBuilder;
-import ru.tisov.denis.life.Life;
+import ru.tisov.denis.life.domain.Life;
 import ru.tisov.denis.life.message.NewLifeRq;
 import ru.tisov.denis.life.message.NewLifeRs;
 import scala.PartialFunction;

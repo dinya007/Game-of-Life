@@ -1,13 +1,11 @@
 package ru.tisov.denis.life.actor;
 
-import akka.actor.Actor;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import akka.testkit.TestActor;
 import akka.testkit.TestActorRef;
 import org.junit.Assert;
 import org.junit.Test;
-import ru.tisov.denis.life.Life;
+import ru.tisov.denis.life.domain.Life;
 
 import java.util.Arrays;
 
