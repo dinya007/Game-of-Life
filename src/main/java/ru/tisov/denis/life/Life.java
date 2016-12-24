@@ -18,26 +18,8 @@ public class Life {
         return lifeArrayWithEdges[0].length - 2;
     }
 
-    public boolean[][] newGenerationForRows(int startRow, int finishRow) {
-        boolean[][] result = new boolean[finishRow - startRow][lifeArrayWithEdges[0].length - 2];
-        ++startRow;
-        ++finishRow;
-
-        int columnNum = lifeArrayWithEdges[0].length;
-        for (int i = startRow; i < finishRow; i++) {
-            for (int j = 1; j < columnNum - 1; j++) {
-                int count = count(i, j);
-                boolean element = lifeArrayWithEdges[i][j];
-                if (element && (count == 2 || count == 3)) {
-                    result[i - startRow][j - 1] = true;
-                } else if (!element && (count == 3)) {
-                    result[i - startRow][j - 1] = true;
-                } else {
-                    result[i - startRow][j - 1] = false;
-                }
-            }
-        }
-        return result;
+    public boolean[][] getLifeArrayWithEdges() {
+        return lifeArrayWithEdges;
     }
 
     boolean[] addFirstAndLastColumnToRow(boolean[] row) {
@@ -58,16 +40,6 @@ public class Life {
         return lifeWithEdges;
     }
 
-    int count(int rowIndex, int columnIndex) {
-        int count = 0;
-        for (int i = rowIndex - 1; i <= rowIndex + 1; i++) {
-            for (int j = columnIndex - 1; j <= columnIndex + 1; j++) {
-                if (i == rowIndex && j == columnIndex) continue;
-                if (lifeArrayWithEdges[i][j]) ++count;
-            }
-        }
-        return count;
-    }
 
     @Override
     public String toString() {

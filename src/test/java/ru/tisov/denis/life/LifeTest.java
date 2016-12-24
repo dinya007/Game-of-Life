@@ -40,28 +40,8 @@ public class LifeTest {
         }));
     }
 
-    @Test
-    public void testCount() throws Exception {
-        Life life = new Life(lifeArray);
 
-        int result = life.count(2, 2);
 
-        Assert.assertEquals(4, result);
-    }
 
-    @Test
-    public void testNewGenerationForRows() {
-        Life life = new Life(new boolean[][]{
-                {false, false, false},
-                {true, false, false},
-                {true, true, false}
-        });
-
-        boolean[][] result = life.newGenerationForRows(1, 2);
-
-        Assert.assertTrue(Arrays.deepEquals(result, new boolean[][]{
-                {true, true, true}
-        }));
-    }
 
 }
