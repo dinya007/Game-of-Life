@@ -3,6 +3,7 @@ package ru.tisov.denis.life;
 import ru.tisov.denis.life.base.SimpleLife;
 import ru.tisov.denis.life.domain.Life;
 import ru.tisov.denis.life.service.LifeOrchestrator;
+import ru.tisov.denis.life.util.LifeCreator;
 
 public class Main {
 

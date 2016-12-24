@@ -1,4 +1,4 @@
-package ru.tisov.denis.life;
+package ru.tisov.denis.life.util;
 
 import java.util.Random;
 

@@ -21,11 +21,11 @@ import java.util.concurrent.TimeUnit;
 
 public class LifeOrchestrator {
 
-    private static final int VIRTUAL_CORES = Runtime.getRuntime().availableProcessors();
+    private static final int VIRTUAL_CORES = 4;
 
-    private Timeout timeout = new Timeout(1, TimeUnit.SECONDS);
-    private ActorSystem system = ActorSystem.create("game_of_life");
-    private ActorRef router;
+    private final Timeout timeout = new Timeout(1, TimeUnit.SECONDS);
+    private final ActorSystem system = ActorSystem.create("game_of_life");
+    private final ActorRef router;
 
     public LifeOrchestrator() {
         router = system.actorOf(Props
